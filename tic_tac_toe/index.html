@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="app.css" rel="stylesheet">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section id="game-space" class="grid">
+                    <div class="row">
+                        <div  class="col background-grey"><span id="8" class="input"></span></div>
+                        <div  class="col middle-column background-grey"><span id="1" class="input"></span></div>
+                        <div  class="col background-grey"><span id="6" class="input"></span></div>
+                    </div>
+                    <div class="row">
+                        <div  class="col middle-row background-grey"><span id="3" class="input"></span></div>
+                        <div  class="col middle-column middle-row background-grey"><span id="5" class="input"></span></div>
+                        <div  class="col middle-row background-grey"><span id="7" class="input"></span></div>
+                    </div>
+                    <div class="row">
+                        <div  class="col background-grey"><span id="4" class="input"></span></div>
+                        <div  class="col middle-column background-grey"><span id="9" class="input"></span></div>
+                        <div  class="col background-grey"><span id="2" class="input"></span></div>
+                    </div>
+            </section>
+            <hr>
+            <section id="score-card" class="score-card">
+                <h2 class="score-card-header">Score Card</h2>
+                <div class="score">
+                    <p>Player X: <span class="player-x-score">0</span></p>
+                    <p>Player O: <span class="player-o-score">0</span></p>
+                </div>
+                <div class="options">
+                    <button class="reset">Reset</button>
+                    <button class="restart">Restart</button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
