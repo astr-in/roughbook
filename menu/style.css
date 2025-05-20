@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 75%;
+    height: 40%;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #d90d1e;
+    background: linear-gradient(90deg, rgba(217, 13, 30, 1) 0%, rgba(235, 224, 127, 1) 100%);
+}
+
+.options {
+    width: 23.2%;
+    height: 93%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.options::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(255, 255, 255, 0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.options:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255,0.5);
+}
+
+.options:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+.icon {
+    width: 72%;
+    height: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon > img {
+    width: 85%;
+    height: 85%;
+}
+
+.cascadia-mono-400 {
+  font-family: "Cascadia Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+    width: 95%;
+    height: 20%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: x-large;
+}
