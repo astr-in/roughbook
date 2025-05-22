@@ -8,7 +8,8 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background: #696464;
+    background: radial-gradient(circle,rgba(105, 100, 100, 1) 0%, rgba(28, 28, 28, 1) 74%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,6 +70,10 @@ body {
 .options:hover::before {
   opacity: 1;
   transform: rotate(-45deg) translateY(100%);
+}
+
+.options:active {
+  transform: scale(0.9);
 }
 
 .icon {
